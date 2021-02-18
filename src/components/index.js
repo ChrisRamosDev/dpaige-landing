@@ -1,0 +1,6 @@
+export { default as About } from "./PageSections/About"
+export { default as Banner } from "./PageSections/Banner"
+export { default as Fitness } from "./PageSections/Fitness"
+export { default as Health } from "./PageSections/Health"
+export { default as Packages } from "./PageSections/Packages"
+export { default as Radio } from "./PageSections/Radio"
