@@ -44,6 +44,8 @@ const Subscribe = () => {
     <form name="subscription-form" onSubmit={handleSubmit}>
       <label htmlFor="email">
         Subscribe to the Newsletter!
+        <br />
+        <hr />
         <input
           type="email"
           value={email}
