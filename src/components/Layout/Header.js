@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
+import { Link } from "react-scroll"
 
 const StyledHeader = styled.header`
   background-color: white;
@@ -20,7 +21,14 @@ const StyledHeader = styled.header`
 `
 
 const StyledMenu = styled.ul`
+  cursor: pointer;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
   display: flex;
+
+  & > *:hover {
+    color: #66a9d3;
+    transform: scale(1.2);
+  }
 
   & > * + * {
     margin-left: 2vw;
@@ -39,19 +47,38 @@ const StyledIcon = styled(FaBars)`
 
 const Menu = () => (
   <StyledMenu>
-    <li>Fitness Packages</li>
-    <li>Health</li>
-    <li>About</li>
-    <li>Radio</li>
+    <li>
+      <Link to="fitness" smooth={true} spy={true}>
+        Fitness Packages
+      </Link>
+    </li>
+    <li>
+      <Link to="health" smooth={true} spy={true}>
+        Health
+      </Link>
+    </li>
+    <li>
+      <Link to="about" smooth={true} spy={true}>
+        About
+      </Link>
+    </li>
+    <li>
+      <Link to="radio" smooth={true} spy={true}>
+        Radio
+      </Link>
+    </li>
   </StyledMenu>
 )
 
 const Header = () => (
-  <StyledHeader>
-    <img
-      src="http://www.demicapaige.com/wp-content/uploads/2021/02/DPaigeLogo.png"
-      alt="Demica Paige Online Fitness Trainer"
-    />
+  <StyledHeader id="home">
+    <Link to="home" smooth={true} spy={true}>
+      <img
+        src="http://www.demicapaige.com/wp-content/uploads/2021/02/DPaigeLogo.png"
+        alt="Demica Paige Online Fitness Trainer"
+        style={{ cursor: "pointer" }}
+      />
+    </Link>
     <StyledIcon />
     <Menu />
   </StyledHeader>

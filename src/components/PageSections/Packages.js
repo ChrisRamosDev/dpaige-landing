@@ -5,7 +5,7 @@ import { FaDumbbell, FaBriefcase } from "react-icons/fa"
 import Button from "../Button"
 
 const Container = styled.div`
-  background-color: #ebebeb;
+  background-color: #c4c4c4;
   padding: 3vw 10vw;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
 `

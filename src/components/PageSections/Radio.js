@@ -50,11 +50,10 @@ const StyledText = styled.div`
 `
 
 const Radio = ({ content }) => {
-  console.log(content)
   const radioContent = content[0].radioSectionContent
 
   return (
-    <StyledRadio>
+    <StyledRadio id="radio">
       <StyledText>
         <h2>
           <span>DEMICA</span> on the <span>RADIO</span>

@@ -54,7 +54,7 @@ const About = ({ content }) => {
   const aboutContent = content[0].aboutSectionContent
 
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <StyledImage>
         <img
           src={aboutContent.aboutImage.sourceUrl}

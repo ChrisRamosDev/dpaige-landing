@@ -56,7 +56,7 @@ const Banner = ({ content }) => {
         <h2>{heroContent.heroText.headline1}</h2>
         <h2>{heroContent.heroText.headline2}</h2>
         <h3>{heroContent.heroText.captionText}</h3>
-        <Button secondary large text="Get your quote" hidden />
+        <Button secondary large text="Contact Now!" hidden />
       </StyledText>
     </StyledBanner>
   )

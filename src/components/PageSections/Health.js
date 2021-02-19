@@ -29,7 +29,7 @@ const StyledText = styled.div`
 
 const Health = ({ content }) => {
   return (
-    <StyledHealth>
+    <StyledHealth id="health">
       <StyledText>
         {Object.values(content[0].healthSectionContent).map((text, index) => (
           <p key={index}>{text}</p>

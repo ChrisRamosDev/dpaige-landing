@@ -1,12 +1,14 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "react-scroll"
 
 import Social from "../Social"
+import Subscribe from "../Subscribe"
 
 const StyledFooter = styled.footer`
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin: 50px 0;
+  margin: 50px 0 0;
   background-color: #eeeeee;
   color: #222;
 
@@ -44,25 +46,16 @@ const Footer = () => {
           <Social />
         </div>
         <div>
-          <img
-            src="http://www.demicapaige.com/wp-content/uploads/2021/02/DPaigeLogo.png"
-            alt="Demica Paige Online Fitness Trainer"
-          />
+          <Link to="home" smooth={true} spy={true}>
+            <img
+              src="http://www.demicapaige.com/wp-content/uploads/2021/02/DPaigeLogo.png"
+              alt="Demica Paige Online Fitness Trainer"
+              style={{ cursor: "pointer" }}
+            />
+          </Link>
         </div>
         <div>
-          <form action="">
-            <label htmlFor="email">
-              Subscribe to our Newsletter
-              <br />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email Address"
-                style={{ margin: "10px 0" }}
-              />
-            </label>
-          </form>
+          <Subscribe />
         </div>
       </div>
     </StyledFooter>

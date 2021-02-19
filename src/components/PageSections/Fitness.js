@@ -47,6 +47,7 @@ const StyledText = styled.div`
     font-size: calc(0.5em + 1vw);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: bold;
+    line-height: 1.3;
   }
 
   & > ul {
@@ -68,7 +69,7 @@ const StyledText = styled.div`
 const Fitness = ({ content }) => {
   const fitnessContent = content[0].fitnessSectionContent
   return (
-    <StyledFitness>
+    <StyledFitness id="fitness">
       <StyledText>
         <h2>{fitnessContent.fitnessHeadline}</h2>
         <h3>{fitnessContent.fitnessCaption}</h3>
