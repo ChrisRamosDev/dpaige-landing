@@ -3,12 +3,7 @@ import React from "react"
 
 const Subscribe = () => {
   return (
-    <form
-      name="subscription-form"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
+    <form name="subscription-form" method="POST" data-netlify="true">
       <label htmlFor="email">
         Subscribe to the Newsletter!
         <input
