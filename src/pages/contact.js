@@ -159,7 +159,7 @@ const SecondPage = () => {
                 <input
                   type="email"
                   name="email"
-                  value={firstname}
+                  value={email}
                   onChange={e => setEmail(e.target.value)}
                   required
                 />
