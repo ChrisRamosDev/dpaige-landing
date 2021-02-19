@@ -113,16 +113,36 @@ const Dropdown = ({ setDropdown }) => (
       >
         ^
       </button>
-      <Link to="fitness" smooth={true} spy={true}>
+      <Link
+        to="fitness"
+        smooth={true}
+        spy={true}
+        onClick={() => setDropdown(false)}
+      >
         Fitness Packages
       </Link>
-      <Link to="health" smooth={true} spy={true}>
+      <Link
+        to="health"
+        smooth={true}
+        spy={true}
+        onClick={() => setDropdown(false)}
+      >
         Health
       </Link>
-      <Link to="about" smooth={true} spy={true}>
+      <Link
+        to="about"
+        smooth={true}
+        spy={true}
+        onClick={() => setDropdown(false)}
+      >
         About
       </Link>
-      <Link to="radio" smooth={true} spy={true}>
+      <Link
+        to="radio"
+        smooth={true}
+        spy={true}
+        onClick={() => setDropdown(false)}
+      >
         Radio
       </Link>
     </div>
