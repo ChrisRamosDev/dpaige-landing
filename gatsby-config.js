@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Demica Paige Onine Personal Training`,
     description: `Reach your goals with Online personal training from Demica Paige`,
+    siteUrl: "https://www.demicapaige.com",
     author: `@crash7114`,
   },
   plugins: [
@@ -20,11 +21,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    {
-      resolve: "gatsby-source-hubspot-forms",
-      options: {
-        apiKey: "5f73c4a8-1140-48e4-b66f-317966ca4e79",
-      },
-    },
   ],
 }

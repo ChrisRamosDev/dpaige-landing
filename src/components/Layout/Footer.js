@@ -8,7 +8,6 @@ import Subscribe from "../Subscribe"
 const StyledFooter = styled.footer`
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin: 50px 0 0;
   background-color: #eeeeee;
   color: #222;
 
@@ -56,6 +55,8 @@ const Footer = () => {
         </div>
         <div>
           <Subscribe />
+          <br />
+          Website built by - ChrisRamosDev
         </div>
       </div>
     </StyledFooter>

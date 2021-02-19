@@ -30,7 +30,8 @@ const StyledButton = styled.button`
   }
 
   &:hover {
-    transform: scale(1.2);
+    transition: all 0.2s ease-in;
+    transform: scale(1.1);
   }
 `
 

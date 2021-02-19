@@ -5,7 +5,7 @@ const StyledHealth = styled.section`
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   background: center
     url("https://www.demicapaige.com/wp-content/uploads/2021/02/greg-rosenke-hqvP1DMi0d0-unsplash.jpg");
-  margin: 50px 10vw 30px;
+  margin: 0 10vw;
   padding: 4vw 0;
   text-align: center;
   font-size: 18px;

@@ -6,7 +6,7 @@ const StyledFitness = styled.section`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 50px 10vw;
+  margin: 50px 10vw 0;
   font-size: 18px;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   background-color: #66a9d3;

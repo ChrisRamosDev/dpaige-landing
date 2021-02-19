@@ -3,7 +3,8 @@ import styled from "styled-components"
 
 const StyledAbout = styled.section`
   font-family: "Oswald", Arial, Helvetica, sans-serif;
-  margin: 30px 10vw 0;
+  background-color: #fff;
+  margin: 0 10vw;
   padding: 4vw 0;
   font-size: 18px;
   display: flex;
@@ -50,7 +51,6 @@ const StyledText = styled.div`
 `
 
 const About = ({ content }) => {
-  console.log(content)
   const aboutContent = content[0].aboutSectionContent
 
   return (

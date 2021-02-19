@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { Link } from "react-scroll"
+import { Link as BackLink } from "gatsby"
 
 const StyledHeader = styled.header`
   background-color: white;
@@ -39,6 +40,31 @@ const StyledMenu = styled.ul`
   }
 `
 
+const StyledDropdown = styled.nav`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+
+  & > div {
+    background-color: #fff;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 2vw 5vw 5vw;
+    transition: 0.2s ease-in;
+
+    & > * {
+      border: 1px solid black;
+      display: block;
+    }
+  }
+`
+
 const StyledIcon = styled(FaBars)`
   @media (min-width: 768px) {
     display: none;
@@ -70,18 +96,64 @@ const Menu = () => (
   </StyledMenu>
 )
 
-const Header = () => (
-  <StyledHeader id="home">
-    <Link to="home" smooth={true} spy={true}>
-      <img
-        src="https://www.demicapaige.com/wp-content/uploads/2021/02/DPaigeLogo.png"
-        alt="Demica Paige Online Fitness Trainer"
-        style={{ cursor: "pointer" }}
-      />
-    </Link>
-    <StyledIcon />
-    <Menu />
-  </StyledHeader>
+const Dropdown = ({ setDropdown }) => (
+  <StyledDropdown onClick={() => setDropdown(false)}>
+    <div>
+      <button
+        onClick={() => setDropdown(false)}
+        style={{
+          color: "#66a9d3",
+          width: "100%",
+          padding: 10,
+          fontWeight: "bold",
+          fontSize: "2rem",
+          border: "none",
+        }}
+      >
+        ^
+      </button>
+      <Link to="fitness" smooth={true} spy={true}>
+        Fitness Packages
+      </Link>
+      <Link to="health" smooth={true} spy={true}>
+        Health
+      </Link>
+      <Link to="about" smooth={true} spy={true}>
+        About
+      </Link>
+      <Link to="radio" smooth={true} spy={true}>
+        Radio
+      </Link>
+    </div>
+  </StyledDropdown>
 )
+
+const Header = () => {
+  const [dropdown, setDropdown] = useState(false)
+  console.log(dropdown)
+
+  const url = window.location.href
+  return (
+    <StyledHeader id="home">
+      <Link to="home" smooth={true} spy={true}>
+        <img
+          src="https://www.demicapaige.com/wp-content/uploads/2021/02/DPaigeLogo.png"
+          alt="Demica Paige Online Fitness Trainer"
+          style={{ cursor: "pointer" }}
+        />
+      </Link>
+      {dropdown && <Dropdown setDropdown={setDropdown} />}
+      {url.endsWith("/contact") ? (
+        <></>
+      ) : (
+        <StyledIcon
+          dropdown={dropdown}
+          onClick={() => setDropdown(!dropdown)}
+        />
+      )}
+      {url.endsWith("/contact") ? <BackLink to="/">Back</BackLink> : <Menu />}
+    </StyledHeader>
+  )
+}
 
 export default Header

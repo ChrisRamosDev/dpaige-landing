@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-// import styled from 'styled-components'
+import FormButton from "./FormButton"
 
 const Subscribe = () => {
   const [email, setEmail] = useState("")
@@ -14,9 +14,13 @@ const Subscribe = () => {
           name: "email",
           value: email,
         },
+        {
+          name: "message",
+          value: `${email} would like to subscribe to the newsletter!`,
+        },
       ],
       context: {
-        pageUri: "https://confident-agnesi-11cb8d.netlify.app",
+        pageUri: "https://dpaige-landing.netlify.app",
         pageName: "Demica Paige Online Personal Training",
       },
     }
@@ -38,6 +42,8 @@ const Subscribe = () => {
       .catch(error => {
         console.error("Error", error)
       })
+
+    setEmail("")
   }
 
   return (
@@ -53,7 +59,7 @@ const Subscribe = () => {
           onChange={e => setEmail(e.target.value)}
         />
       </label>
-      <button type="submit">Subscribe</button>
+      <FormButton>Subscribe</FormButton>
     </form>
   )
 }
