@@ -24,7 +24,7 @@ const StyledButton = styled.button`
   }
 
   @media (min-width: 415px) {
-    display: ${props => (props.hidden ? "block" : "none")};
+    display: ${props => (props.hidden || props.always ? "block" : "none")};
     min-width: 165px;
     margin: 10px auto;
   }
