@@ -51,7 +51,7 @@ const Subscribe = () => {
           onChange={e => setEmail(e.target.value)}
         />
       </label>
-      <button>Subscribe</button>
+      <button type="submit">Subscribe</button>
     </form>
   )
 }

@@ -15,7 +15,7 @@ const StyledImage = styled.div`
   flex: 1 1 35%;
   min-width: 280px;
   background: right
-    url("http://www.demicapaige.com/wp-content/uploads/2021/02/FITNESS.png")
+    url("https://www.demicapaige.com/wp-content/uploads/2021/02/FITNESS.png")
     no-repeat;
 
   & > img {

@@ -18,7 +18,7 @@ const Social = () => {
       <StyledSocial>
         <a href="https://www.facebook.com/demicapaige">
           <img
-            src="http://www.demicapaige.com/wp-content/uploads/2021/02/001-facebook.png"
+            src="https://www.demicapaige.com/wp-content/uploads/2021/02/001-facebook.png"
             alt="facebook link"
           />
         </a>
@@ -26,7 +26,7 @@ const Social = () => {
       <StyledSocial>
         <a href="https://www.instagram.com/demicapaige">
           <img
-            src="http://www.demicapaige.com/wp-content/uploads/2021/02/002-instagram.png"
+            src="https://www.demicapaige.com/wp-content/uploads/2021/02/002-instagram.png"
             alt="instagram link"
           />
         </a>
@@ -34,7 +34,7 @@ const Social = () => {
       <StyledSocial>
         <a href="https://www.twitter.com/demicapaige">
           <img
-            src="http://www.demicapaige.com/wp-content/uploads/2021/02/003-twitter.png"
+            src="https://www.demicapaige.com/wp-content/uploads/2021/02/003-twitter.png"
             alt="twitter link"
           />
         </a>
@@ -42,7 +42,7 @@ const Social = () => {
       <StyledSocial>
         <a href="https://www.linkedin.com/in/demicapaige">
           <img
-            src="http://www.demicapaige.com/wp-content/uploads/2021/02/004-linkedin.png"
+            src="https://www.demicapaige.com/wp-content/uploads/2021/02/004-linkedin.png"
             alt="linkedin link"
           />
         </a>

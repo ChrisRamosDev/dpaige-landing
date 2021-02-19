@@ -74,7 +74,7 @@ const Header = () => (
   <StyledHeader id="home">
     <Link to="home" smooth={true} spy={true}>
       <img
-        src="http://www.demicapaige.com/wp-content/uploads/2021/02/DPaigeLogo.png"
+        src="https://www.demicapaige.com/wp-content/uploads/2021/02/DPaigeLogo.png"
         alt="Demica Paige Online Fitness Trainer"
         style={{ cursor: "pointer" }}
       />
