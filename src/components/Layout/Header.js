@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { Link } from "react-scroll"
 import { Link as BackLink } from "gatsby"
+import { useLocation } from "@reach/router"
 
 const StyledHeader = styled.header`
   background-color: white;
@@ -130,9 +131,9 @@ const Dropdown = ({ setDropdown }) => (
 
 const Header = () => {
   const [dropdown, setDropdown] = useState(false)
-  console.log(dropdown)
+  const location = useLocation()
 
-  const url = window.location.href
+  const url = location.pathname
   return (
     <StyledHeader id="home">
       <Link to="home" smooth={true} spy={true}>
