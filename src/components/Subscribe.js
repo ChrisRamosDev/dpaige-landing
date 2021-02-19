@@ -48,7 +48,7 @@ const Subscribe = () => {
           type="email"
           value={email}
           placeholder="name@name.com"
-          onChang={e => setEmail(e.target.value)}
+          onChange={e => setEmail(e.target.value)}
         />
       </label>
       <button>Subscribe</button>
